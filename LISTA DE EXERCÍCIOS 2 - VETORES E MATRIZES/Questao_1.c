@@ -14,7 +14,9 @@ int main(void){
         printf("Nao ha memoria\n");
         exit(1);
     }
-
+    else{
+        printf("Alocacao realizada!\n");
+    }
     printf("Digite os valores: \n");
     int index;
     for(index = 0; index < n; index++){
@@ -27,4 +29,3 @@ int main(void){
 
     return 0;
 }
-
