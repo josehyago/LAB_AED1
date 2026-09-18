@@ -34,4 +34,6 @@ int main(){
     scanf("%d", &genero_opcao);
     pessoa.g = (Genero)genero_opcao;
     printf("Nome: %s | Idade: %d | Genero: %s\n", pessoa.nome, pessoa.idade, exibir_genero(pessoa.g));
+
+    return 0;
 }
