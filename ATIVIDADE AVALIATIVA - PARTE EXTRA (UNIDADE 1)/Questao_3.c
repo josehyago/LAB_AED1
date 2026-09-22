@@ -81,7 +81,7 @@ int main(void) {
             ast->raio = (float)GetRandomValue(12, 25);
             ast->ativo = true;
             ast->ta = (TipoAsteroide)GetRandomValue(ASTEROIDE_GELO, ASTEROIDE_RADIOATIVO);
-            ast->ra = (RecursosAsteroide){0, 0, 0};
+            ast->ra = (RecursosAsteroide){0};
             switch (ast->ta)
         {
         case ASTEROIDE_GELO: ast->ra.agua = (int)GetRandomValue(10, 50); 
@@ -141,7 +141,7 @@ Asteroide *criarAsteroides(int quantidade) {
         ast->raio = (float)GetRandomValue(12, 25);
         ast->ativo = true;
         ast->ta = (TipoAsteroide)GetRandomValue(ASTEROIDE_GELO, ASTEROIDE_RADIOATIVO);
-        ast->ra = (RecursosAsteroide){0, 0, 0};
+        ast->ra = (RecursosAsteroide){0};
         switch (ast->ta)
         {
         case ASTEROIDE_GELO: ast->ra.agua = (int)GetRandomValue(10, 50); 
